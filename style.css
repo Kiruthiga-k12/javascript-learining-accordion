@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(5, 234, 250);
+}
+/* Accordion container style */
+.accordion-container {
+    width: 300px;
+    
+    
+  }
+  h2{
+    text-align: center;
+    margin-top: 10%;
+
+  }
+  section{
+    min-height: 100vh;
+    width: 80%;
+    margin:  6% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Accordion button style */
+  .accordion-button {
+    background-color: #eee;
+    color: #1a0d0d;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    margin:10px;
+    
+    
+    
+  }
+  
+  /* Dropdown arrow style */
+  .dropdown-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+  }
+  
+  /* Accordion content style */
+  .accordion-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    
+  }
+  
+  /* Show content on button click */
+  .accordion-button.active + .accordion-content {
+    display: block;
+  }
+  
+  /* Rotate dropdown arrow on active */
+  .accordion-button.active .dropdown-arrow {
+    transform: translateY(-50%) rotate(180deg);
+  }
